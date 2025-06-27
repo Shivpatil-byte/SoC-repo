@@ -1,0 +1,72 @@
+Python-
+
+1)print(" "," ")-adds two statements
+2)no semicolons used
+3)name="shiv" use of inverted commas is necessary
+4)type(name) gives datatype of name
+5)division of two ints always gives a floating value
+6)a**b=a^b
+7)not keyword is used for negation
+8)by default input is taken as string. So you need to use type casting to convert string to other dt
+9)str[1:4]-gives letters from char at 1 to 3
+10)negative indexing is possible with last letter given -1 and then value decreases as we move from right to left
+11)if():
+        print()
+   print()  - above print is in if statement because tab space is left whereas second print is out of the if statement
+12)list-equivalent to arrays but can store variables of different datatypes
+   list functions-a.sort();a.sort(reverse=True)[for descending order];a.reverse; a.append("")[to add elements at the end];a.insert(index,element)[to add element at any index;a.remove("")[to remove element when it occurs for the first time;
+13)tuple~list~arrays ;tuple- tup=(1,2,3)
+14)Dictionaries (dict)-kind of array of variables with their values
+ info={"name":"shiv",12:24,"list":["shivbhai",23]}   -ex of dict
+values in dict can be manipulated, accessed as info["name"]="patil"
+15)dict methods-a.keys();a.values();a.items()[gives key value pair in form of tuples];
+16)sets-syntax-a={1,2,3,4,"hi"}-set stores each value once even if it is repeated
+elements of set are immutable hence list and dict cant be included in sets
+set methods-set.add(ele);set.remove(ele);set.clear();set.pop()[gives any random value];set1.union(set2);set1.intersection(set2);
+17)while condition:
+
+18)for loop is different in python- 
+list_name=[1,2,3,4,5]
+for i in list_name:
+print[i]-basically for  loop is used to access elements of list, dictionaries, tuples ,strings one by one in the form of "i"
+--->pass keyword is used to not do any work in for loop
+19)functions-
+  def fn_name(p1,p2...):
+return value
+
+20)file i\o- f=open ("filename.txt","r")[r=read]
+line1=f.read()
+line2=f.readline()
+print(line1)--->complete data in the file is displayed
+print(line2)----->one line is read only 
+-------->>>>reading a file can be thought as a cursor moving from one point in the file to next continuously so you cant read the same data multiple times with opening of the file once only
+21) @staticmethod is use dto make the function available at class level and not at the object level
+ex-@staticmethod
+   def welcome() [no requirement of using self in argument]
+print("welcome guys")
+22)del student.name or del student will delete the object attribute or object
+23) __name makes the attribute private whereas by default it is public
+24)Inheritance- class child(parent):
+[this means that the child class will have access to all the attributes and methods of class parent]
+
+
+25)Numpy- To install use- 'pip install numpy'
+     then to use numpy- import numpy as variable_name
+i) a @ b gives matrix multiplication of two matrices a and b
+ii)sorting in 2d array- variable_name.sort(x)-sorts individual rows; to sort column wise-v_n.sort(x,axis=0)
+
+
+26)json converts dictionary-->string-->dictionary 
+   the converted string can even be used by other languages who use json such as c++,so json plays role of joining to languages
+json.dumps(books) converts dict books to string and json.loads(books) converts back to dict
+27)__name__ has predefined valieof __main__. This value changes if one file is being called from other and the value is now changed to the name of the file.
+If file is direclty opened and not called from other program file then the value remains as __main__.
+
+28)exception- to not stop the program from running even after the exception such as / by 0 occur- use-> try  part_of_code_where_you_think_exception_can_occur except exception as e   rest_of_the_code.
+
+29)commands in pandas-
+df=pd.read_csv(addressoftable)
+df.shape
+rows,colums=df.shape    rows-gives no. of rows
+df.head(n)-gives first n rows
+df.describe()-gives the statistcs of the datatable   
